@@ -22,7 +22,7 @@ Next, you will need to generate a training set using `setup/get_samples.py`. The
 
 In the file, you can also adjust the batch size (defaults to `125`), start index (defaults to `0`), end index (defaults to the length of the training list), the sequence length (defaults to `128` tokens), the temperature and top-p (default to `1.0`), and the model name (defaults to `"meta-llama/Llama-2-7b-hf"`).
 
-IMPORTANT: YOU NEED TO ADD YOUR LLAM2 ACCESS TOKEN TO LINE 15.
+IMPORTANT: YOU NEED TO ADD YOUR LLAMA2 ACCESS TOKEN TO LINE 15.
 
 ### Labelling the Generations
 
@@ -55,4 +55,4 @@ A few notes on this command:
 
 Note: In WandB, there is logging functionality that checks average detector score at each evaluation. This specifically logs info about the performance of the RoBERTa-lg detector. Please keep this in mind if your training set was created with a different detector.
 
-IMPORTANT: YOU NEED TO ADD YOUR LLAM2 ACCESS TOKEN TO LINE 17.
+IMPORTANT: YOU NEED TO ADD YOUR LLAMA2 ACCESS TOKEN TO LINE 17 OF `train.py` AND LINE 47 OF `trainers.py`.
